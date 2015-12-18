@@ -30,3 +30,22 @@
 (defn set-max-output-memory! [info value]
   (.setMaxOutputMemory info value)
   info)
+
+(defn subsampling-enabled? [info]
+  (.isSubsamplingEnabled info))
+
+(defn set-subsampling-enabled!
+  ([info]
+   (set-subsampling-enabled! info true))
+  ([info value]
+   (.setSubsamplingEnabled info value)
+   info))
+
+(defn unset-subsampling-enabled! [info]
+  (set-subsampling-enabled! info false))
+
+(defn enable-subsampling! [info]
+  (set-subsampling-enabled! info))
+
+(defn disable-subsampling! [info]
+  (unset-subsampling-enabled! info))
