@@ -1,6 +1,6 @@
-# clj-gs-wcs
+# JeoServer
 
-A Clojure library designed to ... well, that part is up to you.
+JeoServer is a thin wrapper around GeoServer's libraries for use in Clojure.
 
 ## Usage
 
@@ -8,7 +8,7 @@ FIXME
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Christopher Mark Gore, Soli Deo Gloria, all rights reserved.
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

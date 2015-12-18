@@ -1,6 +1,6 @@
-(ns clj-gs-wcs.core-test
+(ns jeoserver.core-test
   (:require [clojure.test :refer :all]
-            [clj-gs-wcs.core :refer :all]))
+            [jeoserver.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

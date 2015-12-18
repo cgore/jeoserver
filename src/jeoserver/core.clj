@@ -1,4 +1,4 @@
-(ns clj-gs-wcs.core)
+(ns jeoserver.core)
 
 (defn foo
   "I don't do a whole lot."
