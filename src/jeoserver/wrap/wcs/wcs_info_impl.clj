@@ -4,6 +4,8 @@
 (defn wcs-info-impl? [thing]
   (instance? WCSInfoImpl thing))
 
+;;; GML prefixing?
+
 (defn gml-prefixing? [info]
   (.isGMLPrefixing info))
 
@@ -17,6 +19,8 @@
 (defn unset-gml-prefixing! [info]
   (set-gml-prefixing! info false))
 
+;;; Max input memory
+
 (defn max-input-memory [info]
   (.getMaxInputMemory info))
 
@@ -24,12 +28,16 @@
   (.setMaxInputMemory info value)
   info)
 
+;;; Max output memory
+
 (defn max-output-memory [info]
   (.getMaxOutputMemory info))
 
 (defn set-max-output-memory! [info value]
   (.setMaxOutputMemory info value)
   info)
+
+;;; Subsampling enabled?
 
 (defn subsampling-enabled? [info]
   (.isSubsamplingEnabled info))
@@ -49,3 +57,11 @@
 
 (defn disable-subsampling! [info]
   (unset-subsampling-enabled! info))
+
+;;; Overview policy
+
+(defn overview-policy [info]
+  (.getOverviewPolicy info))
+
+(defn set-overview-policy! [info policy]
+  (.setOverviewPolicy info policy))
