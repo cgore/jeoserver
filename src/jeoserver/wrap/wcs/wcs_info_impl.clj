@@ -11,7 +11,8 @@
   ([info]
    (set-gml-prefixing! info true))
   ([info value]
-   (.setGMLPrefixing info value)))
+   (.setGMLPrefixing info value)
+   info))
 
 (defn unset-gml-prefixing! [info]
   (set-gml-prefixing! info false))
@@ -20,10 +21,12 @@
   (.getMaxInputMemory info))
 
 (defn set-max-input-memory! [info value]
-  (.setMaxInputMemory info value))
+  (.setMaxInputMemory info value)
+  info)
 
 (defn max-output-memory [info]
   (.getMaxOutputMemory info))
 
 (defn set-max-output-memory! [info value]
-  (.setMaxOutputMemory info value))
+  (.setMaxOutputMemory info value)
+  info)
